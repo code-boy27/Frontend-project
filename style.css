@@ -1,0 +1,519 @@
+/* -------------------------------import------------- */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+/* font for section 3"fresh " */
+/* ------menu-------------- */
+
+#menu {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+  font-size: 1.2rem;
+  z-index: 9999;
+}
+#logo {
+  padding-left: 30px;
+  height: 40px;
+  width: 40px;
+}
+#list {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+}
+
+#list > span {
+  padding: 6px 10px 6px 10px;
+  border-bottom: 1px solid gray;
+}
+#list > span:last-child {
+  border: none;
+}
+
+.buy-now-btn {
+  background-color: #aad236;
+  color: white;
+  padding: 7px 25px;
+}
+.navbar_item {
+  padding: 7px 7px;
+  position: relative;
+  cursor: pointer;
+}
+.left-menu {
+  margin-right: 20px;
+}
+.navbar_dropdown {
+  background-color: white;
+  border-top: 2px solid #aad236;
+  top: 100%;
+  left: 5px;
+  position: absolute;
+  transform-origin: top left;
+  padding: 0 13px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s;
+}
+
+.navbar_item:hover > .navbar_dropdown {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+#cover {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.cover-text h1 {
+  font-size: 3rem;
+}
+.cover-text p {
+  /* font-size: x-large; */
+  color: #8b8b99;
+}
+.cover-text {
+  padding: 20%;
+}
+
+/* --------------------------Section-2------------- */
+#section-2 {
+  display: flex;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+}
+#step1 {
+  background-color: #5acda6;
+}
+#step2 {
+  background-color: #91ac41;
+}
+#step3 {
+  background-color: #e4b476;
+}
+#step4 {
+  background-color: #e486cc;
+}
+.step {
+  padding: 80px 20px;
+  text-align: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.step i {
+  /* padding: 15px; */
+  font-size: 7rem;
+  transition: 1s;
+}
+
+.step:hover i {
+  transform: scale(1.2);
+}
+.step h3 {
+  font-size: xx-large;
+}
+/* --------------------------section-3------------ */
+#section-3 {
+  background-color: #f7eee2;
+  margin-top: -19px;
+  text-align: center;
+  padding: 50px;
+}
+
+.main {
+  display: flex;
+}
+.card {
+  width: 50%;
+  padding: 20px 3%;
+  padding-top: 100px;
+  text-align: center;
+  justify-content: center;
+  margin: 15px 0 15px 0;
+}
+.card i {
+  color: #e3b375;
+  font-size: 6rem;
+  transition: 1s;
+}
+.card h1 {
+  font-size: 24px;
+}
+#section-3 p,
+.card > p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #8b8b99;
+}
+
+#section-3 > h3,
+#section-4 > h3,
+#section-8 h3 {
+  color: #91ac41;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 35px;
+}
+
+#section-3 > h1 {
+  font-size: 2.7rem;
+}
+.card:hover i {
+  transform: scale(1.2);
+}
+
+/* ---------------------------section-4----------------------------- */
+#section-4 {
+  margin-top: -19px;
+  text-align: center;
+  padding: 50px;
+}
+#section-4 p,
+#section-8 p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #8b8b99;
+}
+
+#section-4 h1 {
+  margin-top: 0;
+  font-size: 2.7rem;
+}
+.card-id {
+  width: 35%;
+  margin: 5px 10px 5px 10px;
+  padding: 5%;
+  background-color: #f5f6fb;
+  transition: 0.4s;
+  border-radius: 0 60px;
+}
+.card-id img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.card-id:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+/* ------------------------------------------section-5-------------------- */
+#section-5 {
+  margin-top: -10px;
+  display: flex;
+  justify-content: stretch;
+}
+.left-cover {
+  width: 70%;
+  display: inline-block;
+  margin: 0;
+}
+.left-cover img {
+  height: auto;
+  width: 100%;
+}
+.right-cover {
+  display: inline-block;
+  background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+  background-position: left;
+  background-size: cover;
+}
+.right-cover h1 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.right-cover p {
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #8b8b99;
+  padding-left: 0;
+}
+.right-cover button {
+  background-color: #f69dad;
+  outline: none;
+  border: none;
+  margin: 15px 0;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.right-cover button:hover {
+  background-color: transparent;
+  border: 1px solid #f69dad;
+  color: #f69dad;
+  padding: 9px 19px;
+  cursor: pointer;
+}
+
+.right-cover input,
+.meet-us input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: white;
+  padding: 12px;
+  color: #8b8b99;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: block;
+  outline: none;
+}
+
+.right-cover .text-wrapper {
+  margin: 10%;
+}
+/* ------------------------section-6-------------------- */
+
+#section-6 {
+  background-color: #f6fcfa;
+  margin-top: -30px;
+  position: relative;
+}
+#section-6 .card {
+  padding: 0;
+}
+
+#section-6 p {
+  color: #57e3b5;
+}
+#section-6 h1 {
+  font-size: 2.5rem;
+}
+
+/* ---------------------------------section-7---------------- */
+#section-7 {
+  text-align: center;
+}
+#section-7 h1 {
+  font-size: 3rem;
+  color: #8b8b99;
+}
+#section-7 #line-separator {
+  width: 96px;
+  display: inline-block;
+  height: 5px;
+  background-color: #e4b476;
+  margin-bottom: 36px;
+}
+
+/* ---------------------------section-8-------------- */
+.end-section {
+  display: flex;
+  padding: 40px 10%;
+  /* background-color: lightpink; */
+}
+.end-section input {
+  border: 1px solid gray;
+}
+.contact-us p,
+.meet-us p {
+  line-height: 2rem;
+}
+.end-section button {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #aad236;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+.contact-us,
+.meet-us {
+  padding: 10px;
+}
+footer {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: rgba(17, 17, 17);
+}
+
+.contact-us,
+.meet-us {
+  width: 50%;
+}
+
+/* --------------------------@media Query 600--------------- */
+@media screen and (max-width: 600px) {
+  .contact-us {
+    margin-top: -200px;
+    width: 100%;
+  }
+  #menu {
+    width: 100%;
+  }
+  iframe {
+    box-sizing: border-box;
+    margin-top: -100px;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .left-menu .navbar_item {
+    display: none;
+  }
+  #cover {
+    height: 100vh;
+    width: auto;
+  }
+  .cover-text h1 {
+    font-size: 1.7rem;
+  }
+  .cover-text p {
+    font-size: small;
+  }
+
+  .step {
+    padding: 30px 10px;
+    width: 100%;
+  }
+  .step p {
+    margin: 50px;
+  }
+  .step i {
+    font-size: 4rem;
+  }
+  .card-id {
+    width: auto;
+    margin: 5px 10px 25px 10px;
+    padding: 5%;
+    background-color: #f5f6fb;
+  }
+  .discription-S4 {
+    font-size: 1px;
+  }
+}
+
+/* --------------------------@media Query 900--------------- */
+
+@media screen and (max-width: 900px) {
+  .contact-us p,
+  .meet-us p {
+    line-height: 1rem;
+    margin-right: 0px;
+  }
+
+  .contact-us,
+  .meet-us {
+    width: 100%;
+  }
+  .end-section {
+    display: block;
+  }
+  .end-section p {
+    display: block;
+  }
+  .contact-us p {
+    line-height: 2rem;
+    margin-right: auto;
+  }
+
+  #section-7 #line-separator {
+    margin-bottom: 0;
+  }
+  #section-7 h1 {
+    font-size: 2rem;
+  }
+  #section-6 .main {
+    padding: 10px 0;
+  }
+  #section-6 .card {
+    padding: 00;
+  }
+  #section-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-cover {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .left-cover img {
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+  }
+
+  #section-3 > h1,
+  #section-4 > h1,
+  .right-cover h1 {
+    font-size: 2rem;
+  }
+
+  #section-4 > h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-id {
+    width: auto;
+    margin: 5px 10px 25px 10px;
+    padding: 5%;
+    background-color: #f5f6fb;
+  }
+  .left-menu .navbar_item {
+    display: none;
+  }
+  #cover {
+    height: 100vh;
+    width: auto;
+  }
+  .cover-text h1 {
+    font-size: 2rem;
+  }
+  .step p {
+    margin: 50px;
+  }
+  .cover-text {
+    padding: 5%;
+  }
+  #section-2 {
+    display: block;
+  }
+  .step i {
+    font-size: 5rem;
+  }
+  .step {
+    padding: 30px 0px;
+    width: 100%;
+  }
+  .main {
+    display: block;
+    /* margin-left: 20%; */
+  }
+  .card {
+    width: auto;
+  }
+}
